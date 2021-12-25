@@ -1,12 +1,8 @@
-.box {
-    width: 300px;
-    height: 200px;
-    background-color: yellow;
-}
-
 .user {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkseagreen;
+    background-color: navajowhite;
+    width: 520px;
+    position: relative;
+    left: 50px;
+    margin-bottom: 4px;
 }

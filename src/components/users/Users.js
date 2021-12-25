@@ -27,14 +27,16 @@ export default function Users() {
     }
 
     return (
-        <div>
+        <div className="box_with_users">
 
             {
                 users.map((value, index) => <User key={index} item={value}/>)
             }
-            <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
-            {page}
-            <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
+            <div className="button">
+                <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
+                {page}
+                <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
+            </div>
         </div>
     );
 }

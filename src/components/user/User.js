@@ -2,10 +2,12 @@ import './User.css';
 
 export default function User({item}) {
     return (
-        <div className="box">
-            <div className="user">
-                {item.name} - {item.id}
-            </div>
+        <div className="user">
+            <form action="">
+                <input type="checkbox"/>
+            </form>
+            {item.name} {item.id} {item.class} {item.score} {item.parents}
         </div>
+
     );
 }
