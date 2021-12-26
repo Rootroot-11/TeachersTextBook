@@ -1,6 +1,12 @@
 .wrap {
-    background-color: cornflowerblue;
+    background-color: #FFFFFF;
     display: flex;
     height: 800px;
+    width: 1360px;
+    padding-left: 40px;
+    padding-bottom: 96px;
+}
 
+.header_container {
+    display: flex;
 }

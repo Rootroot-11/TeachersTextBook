@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header_top {
+    background-color: navajowhite;
+    width: 1440px;
+}
+
+.school {
+    padding-left: 233px;
+    padding-right: 104px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.header_top_menu {
+    grid-column-gap: 16px;
+}
+
+.avatar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
