@@ -6,8 +6,8 @@ const Avatar = styled.div`
   width: 40px;
   height: 40px;
   overflow: hidden;
-  justify-content: flex-end;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: center;
   margin-left: 330px;
   
   img{
