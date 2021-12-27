@@ -10,7 +10,7 @@ export default function Users() {
 
     useEffect(() => {
         setUsers(null)
-        getUsers(page, 4).then(value => {
+        getUsers(page, 6).then(value => {
             setUsers(value.data)
             setTotalPages(value.totalPages)
         })
@@ -27,15 +27,41 @@ export default function Users() {
     }
 
     return (
-        <div className="box_with_users">
+        <div>
+            <table>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                <tr>
+                    <th>ID</th>
+                </tr>
+                <tr>
+                    <th>Class</th>
+                </tr>
+                <tr>
+                    <th>Av. Score, %</th>
+                </tr>
+                <tr>
+                    <th>Av. Speed</th>
+                </tr>
+                <tr>
+                    <th>Parents</th>
+                </tr>
+                </thead>
+            </table>
+            <div className="box_with_users">
+                <section>
+                    {
+                        users.map((value, index) => <User item={value} key={index}/>)
 
-            {
-                users.map((value, index) => <User key={index} item={value}/>)
-            }
-            <div className="button">
-                <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
-                {page}
-                <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
+                    }
+                </section>
+                <div className="button">
+                    <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
+                    {page}
+                    <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
+                </div>
             </div>
         </div>
     );

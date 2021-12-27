@@ -1,4 +1,4 @@
-import {Avatar} from "../../common/Avatar";
+import {Avatar} from "../../../common/Avatar";
 import './Header.css';
 
 const Header = () => {

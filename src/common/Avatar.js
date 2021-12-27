@@ -9,6 +9,7 @@ const Avatar = styled.div`
   justify-content: center;
   align-items: center;
   margin-left: 330px;
+  margin-bottom: 10px;
   
   img{
     width: inherit;

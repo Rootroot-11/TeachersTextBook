@@ -1,12 +1,11 @@
 .wrap {
     background-color: #FFFFFF;
     display: flex;
-    height: 800px;
-    width: 1360px;
+    height: 806px;
+    width: 1440px;
     padding-left: 40px;
     padding-bottom: 96px;
 }
-
 
 .header_sec_container {
     display: flex;

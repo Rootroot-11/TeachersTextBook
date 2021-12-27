@@ -1,12 +1,14 @@
 .user {
     display: flex;
-    width: 520px;
-    position: relative;
+    width: 1360px;
+    height: 48px;
     background-color: #FFFFFF;
     left: 50px;
+    align-items: center;
+    justify-content: initial;
 }
 
-/*div:nth-child(2n) {*/
-/*    background-color: #F9F9F9;*/
-/*}*/
-
+.oneUser {
+    display: flex;
+    grid-column-gap: 60px;
+}
