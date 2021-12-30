@@ -1,14 +1,36 @@
+tbody > *:nth-child(2n) {
+    background-color: #F9F9F9;
+    width: 1360px;
+    height: 48px;
+}
+
 .user {
     display: flex;
     width: 1360px;
     height: 48px;
-    background-color: #FFFFFF;
     left: 50px;
     align-items: center;
-    justify-content: initial;
+    justify-content: flex-start;
 }
 
 .oneUser {
     display: flex;
-    grid-column-gap: 60px;
+    height: 48px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.box_with_users {
+    width: 1360px;
+    height: 414px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-flow: column;
+}
+
+.headerOfTable {
+    display: flex;
+    /*border-spacing: 1px;*/
+    width: 100%;
+    justify-content: space-between;
 }

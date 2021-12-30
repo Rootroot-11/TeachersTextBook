@@ -1,15 +1,10 @@
-// import {useEffect, useState} from "react";
-//
-// export default function UserDetails() {
-//     const [userById, setUserById] = useState([]);
-//
-//     useEffect(() => {
-//         getUserById(id).then(value)
-//     })
-//     return (
-//         <div>
-//     UserDetails
-//
-//         </div>
-//     );
-// }
+export default function UserDetails() {
+    return (
+        <div>
+            <div>
+                <p>This is one user</p>
+            </div>
+
+        </div>
+    );
+}
