@@ -1,9 +1,8 @@
 import './User.css';
-import {Link} from "react-router-dom";
 
-export default function User({users, sortData}) {
+export default function User({sortData, detailRow, filteredUsers}) {
     return (
-
+        <div>
         <table className="box_with_users">
             <thead>
             <tr className="headerOfTable">
@@ -34,9 +33,10 @@ export default function User({users, sortData}) {
             </tr>
             </thead>
             <tbody>
-            {/*< Link to={{pathname: '/users/:item.id'}}>*/}
-            {users.map((item) => (
-                <tr key={item.id} className="oneUser">
+            {filteredUsers.map((item) => (
+                <tr key={item.id}
+                    className="oneUser"
+                    onClick={() => detailRow(item)}>
                     <td>
                         <form action=""><input type="checkbox"/></form>
                     </td>
@@ -47,8 +47,8 @@ export default function User({users, sortData}) {
                     <td>{item.speed}</td>
                     <td>{item.parents}</td>
                 </tr>))}
-            {/*</Link>*/}
             </tbody>
         </table>
+        </div>
     );
 }
