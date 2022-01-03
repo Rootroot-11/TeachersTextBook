@@ -8,3 +8,21 @@
     grid-column-gap: 6px;
     margin-left: 160px;
 }
+
+.header_third {
+    display: flex;
+    background: #FFFFFF;
+    width: 1440px;
+    height: 48px;
+    top: 100px;
+    justify-content: space-around;
+}
+
+.searcher {
+    display: flex;
+    width: 499px;
+    height: 32px;
+    left: 471px;
+    background-color: #F2F2F2;
+    margin: 0;
+}
