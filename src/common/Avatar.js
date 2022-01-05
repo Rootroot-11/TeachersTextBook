@@ -10,8 +10,8 @@ const Avatar = styled.div`
   align-items: center;
   margin-left: 330px;
   margin-bottom: 10px;
-  
-  img{
+
+  img {
     width: inherit;
   }
 `;
