@@ -1,0 +1,95 @@
+.userDetails {
+    display: flex;
+}
+
+.circleRed {
+    display: block;
+    background: red;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+}
+
+.circleGreen {
+    display: block;
+    background: #0F9D58;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+}
+
+.circleYellow {
+    display: block;
+    background: #E2B534;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+}
+
+.circleBlue {
+    display: block;
+    background: #4285F4;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    margin: 0;
+}
+
+.head {
+    display: flex;
+    text-transform: uppercase;
+    grid-column-gap: 15px;
+    height: 20px;
+    align-items: center;
+}
+
+.tableWithDetails {
+    width: 1360px;
+    height: 422px;
+    margin-left: 60px;
+    background-color: #F2F2F2;
+}
+
+.trWithButtons {
+    display: flex;
+    grid-column-gap: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.buttons {
+    width: 154px;
+    height: 32px;
+    background: #FFFFFF;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    grid-column-gap: 8px;
+    justify-content: center;
+    color: #5B5B5B;
+}
+
+.hr {
+    width: 1102px;
+    height: 2px;
+    background-color: #A6192E;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+i {
+    border: solid #C0C0C0;
+    border-width: 0 3px 3px 0;
+    display: flex;
+    padding: 3px;
+    max-height: 3px;
+    max-width: 3px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}

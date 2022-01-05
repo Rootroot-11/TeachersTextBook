@@ -32,3 +32,21 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+.icon {
+    margin-left: 11px;
+    border: solid #777777;
+    border-width: 0 3px 3px 0;
+    display: flex;
+    padding: 3px;
+    max-height: 3px;
+    max-width: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.buttStudents {
+    background-color: #A6192E;
+    font-weight: bold;
+    border-color: #A6192E;
+}

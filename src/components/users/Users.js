@@ -1,4 +1,4 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {getUsers} from "../../services/users.api";
 import User from "../user/User";
 import "./Users.css";
@@ -9,6 +9,7 @@ export default function Users() {
     const [page, setPage] = useState(1);
     const [directionSort, setDirectionSort] = useState(true);
     const [rowItem, setRowItem] = useState(true);
+    const [user, setUser] = useState([]);
 
     const sortData = (field) => {
         setRowItem(field);
@@ -36,28 +37,32 @@ export default function Users() {
 
     const filteredUsers = users.filter(user => {
         return user.name.toLowerCase().includes(value.toLowerCase())
-    })
+    });
 
     useEffect(() => {
         getUsers(page, 4).then(value => {
             setUsers(value.data)
             setTotalPages(value.totalPages)
         })
+        getUsers(page, 1).then(value => {
+            setUser(value.data)
+        })
     }, [page]);
 
     const detailRow = (row) => {
         setRowItem(row)
-    }
+    };
 
     const paginationHandler = (num) => {
         setPage(page + num)
-    }
+    };
 
     if (!filteredUsers) {
         return (
             <div>Loading...</div>
         )
     }
+
     return (
         <div>
             <header className="header_third d-flex align-center">
@@ -74,16 +79,23 @@ export default function Users() {
                 </div>
             </header>
             {
-                <User users={users} sortData={sortData}
+                <User sortData={sortData}
                       detailRow={detailRow}
                       filteredUsers={filteredUsers}
-                      rowItem={rowItem}/>
+                      rowItem={rowItem} user={user}/>
             }
-            <div className="button">
-                <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
-                {page}
-                <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
-            </div>
+            <footer className="footer">
+                <p>Rows per page: 10 </p>
+
+                <form className="form"><i className="arrow down"/></form>
+
+                <p>21-30 of 100</p>
+                <div>
+                    <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
+                    {page}
+                    <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
+                </div>
+            </footer>
         </div>
     );
 }

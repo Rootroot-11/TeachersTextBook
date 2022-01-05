@@ -1,19 +1,21 @@
 import {Avatar} from "../../../common/Avatar";
 import './Header.css';
+import React from "react";
 
 const Header = () => {
     return (
         <header className="header_top d-flex">
             <div className="school d-flex align-center header_top_grid">
                 SCHOOL 1
+                <i className="icon"/>
             </div>
             <div className="header_top_menu d-flex align-center">
-                <div className="nav_menu_item"><a href="#">ANALITYCS</a></div>
-                <div className="nav_menu_item"><a href="#">GRADEBOOKS</a></div>
-                <div className="nav_menu_item"><a href="#">TESTS</a></div>
-                <div className="nav_menu_item"><a href="#">STUDENTS</a></div>
-                <div className="nav_menu_item"><a href="#">TEACHERS</a></div>
-                <div className="nav_menu_item"><a href="#">ARCHIVE</a></div>
+                <div><a href="#">ANALITYCS</a></div>
+                <div><a href="#">GRADEBOOKS</a></div>
+                <div><a href="#">TESTS</a></div>
+                <div className="buttStudents"><a href="#" style={{color:'#FFFFFF'}}>STUDENTS</a></div>
+                <div><a href="#">TEACHERS</a></div>
+                <div><a href="#">ARCHIVE</a></div>
             </div>
 
             <div className="avatar">

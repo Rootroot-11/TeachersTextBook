@@ -1,7 +1,6 @@
 tbody > *:nth-child(2n) {
     background-color: #F9F9F9;
-    width: 1360px;
-    height: 48px;
+    width: 100%;
 }
 
 .user {
@@ -13,27 +12,27 @@ tbody > *:nth-child(2n) {
     justify-content: flex-start;
 }
 
+.box_with_users {
+    width: 100%;
+    height: 414px;
+    background-color: #FFFFFF;
+    display: block;
+    flex-flow: column;
+}
+
 .oneUser {
     display: flex;
     height: 48px;
     align-items: center;
-    justify-content: space-around;
 }
 
-.box_with_users {
-    width: 1360px;
-    height: 414px;
-    background-color: #FFFFFF;
-    display: flex;
-    flex-flow: column;
-}
+tr { display: block; float: left; grid-column-gap: 70px; width: 100%}
+th, td { display: block; }
 
 .headerOfTable {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
-    left: 50px;
+    margin-left: 1px;
 }
 
 .tableBody {
@@ -46,3 +45,23 @@ tbody > *:nth-child(2n) {
 .block {
     display: block;
 }
+
+.userName {
+    width: 190px;
+}
+
+.anotherDetails {
+    display: flex;
+    margin-left: 230px;
+}
+
+.thId {
+    margin-left: 300px;
+}
+
+.thScore {
+    position: relative;
+    float: right;
+    display: flex;
+}
+
