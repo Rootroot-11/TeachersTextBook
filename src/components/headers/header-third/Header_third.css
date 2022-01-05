@@ -15,17 +15,3 @@
     background-color: #F2F2F2;
     margin: 0;
 }
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    grid-column-gap: 30px;
-    width: 100%;
-}
-
-.form {
-    width: 4px;
-    height: 4px;
-}

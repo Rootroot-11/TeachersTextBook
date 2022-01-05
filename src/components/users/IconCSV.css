@@ -6,6 +6,7 @@
 }
 
 .iconCSV {
-    height: 11.33px;
-    width: 9.33px;
+    display: flex;
+    max-width: 5px;
+    max-height: 5px;
 }

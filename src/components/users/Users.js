@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {getUsers} from "../../services/users.api";
 import User from "../user/User";
-import "./Users.css";
+import {Footer} from "../footer/Footer";
+import {Header_third} from "../headers/header-third/Header_third";
 
 export default function Users() {
     const [users, setUsers] = useState([]);
@@ -65,37 +66,19 @@ export default function Users() {
 
     return (
         <div>
-            <header className="header_third d-flex align-center">
-                <h1 className="stud"><a href="#">STUDENTS</a></h1>
-                <form className="searh_form">
-                    <input className="searcher" type="search" placeholder="Enter Student Name, Parent or ID here"
-                           onChange={(event) => setValue(event.target.value)}/>
-                </form>
-                <div className="divCSV">
-                    {/*<img className="iconCSV"*/}
-                    {/*     src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-svg-icon-png-image_956571.jpg"*/}
-                    {/*     alt="export_svg"/>*/}
-                    <p>EXPORT CSV</p>
-                </div>
-            </header>
-            {
-                <User sortData={sortData}
-                      detailRow={detailRow}
-                      filteredUsers={filteredUsers}
-                      rowItem={rowItem} user={user}/>
-            }
-            <footer className="footer">
-                <p>Rows per page: 10 </p>
+            <Header_third
+                setValue={setValue}/>
 
-                <form className="form"><i className="arrow down"/></form>
+            <User sortData={sortData}
+                  detailRow={detailRow}
+                  filteredUsers={filteredUsers}
+                  rowItem={rowItem}
+                  user={user}/>
 
-                <p>21-30 of 100</p>
-                <div>
-                    <button disabled={page <= 1} onClick={() => paginationHandler(-1)}>prev</button>
-                    {page}
-                    <button disabled={page >= totalPages} onClick={() => paginationHandler(1)}>next</button>
-                </div>
-            </footer>
+            <Footer
+                totalPages={totalPages}
+                page={page}
+                paginationHandler={paginationHandler}/>
         </div>
     );
 }
