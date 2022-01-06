@@ -3,7 +3,7 @@ import './DetailedItem.css';
 
 const DetailedItem = ({userDetailsData, user}) => {
 
-    const speed = user.map(oneUser => oneUser.tests.map(value => value.speed));
+    const speed = user.map(filterUser => filterUser.tests.map(value => value.speed));
     const score = user.map(filterUser => filterUser.tests.map(value => value.score));
     const total = user.map(filterUser => filterUser.tests.map(value => value.total));
     const eSpeed = user.map(filtredUser => filtredUser.tests.map(value => value.expSpeed));

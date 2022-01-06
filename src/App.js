@@ -5,17 +5,12 @@ import Header_second from "./components/headers/header-second/Header_second";
 
 export default function App() {
     return (
-            <div>
-                <div className="header_container">
-                    <Header/>
-                </div>
-
-                <Header_second/>
-                <section>
-                    <div className="wrap">
-                        <Users/>
-                    </div>
-                </section>
+        <div className="fullContainer">
+            <Header/>
+            <Header_second/>
+            <div className="wrap">
+                <Users/>
             </div>
+        </div>
     );
 }

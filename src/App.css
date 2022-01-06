@@ -1,3 +1,7 @@
+.fullContainer {
+    width: 1440px;
+}
+
 .wrap {
     background-color: #FFFFFF;
     display: flex;

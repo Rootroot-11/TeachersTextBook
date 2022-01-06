@@ -13,7 +13,7 @@ tbody > *:nth-child(2n) {
 }
 
 .box_with_users {
-    width: 100%;
+    width: 1360px;
     height: 414px;
     background-color: #FFFFFF;
     display: block;
