@@ -10,10 +10,7 @@ const Header_third = ({setValue}) => {
                        onChange={(event) => setValue(event.target.value)}/>
             </form>
             <div className="divCSV">
-                {/*<img className="iconCSV"*/}
-                {/*     src="https://png.pngtree.com/png-vector/20190419/ourmid/pngtree-vector-svg-icon-png-image_956571.jpg"*/}
-                {/*     alt="export_svg"/>*/}
-                <p>EXPORT CSV</p>
+
             </div>
         </header>
     )

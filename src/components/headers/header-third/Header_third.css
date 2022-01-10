@@ -7,6 +7,10 @@
     justify-content: space-around;
 }
 
+.header_third a {
+    text-decoration: none;
+}
+
 .searcher {
     display: flex;
     width: 499px;

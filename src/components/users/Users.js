@@ -45,7 +45,7 @@ export default function Users() {
             setUsers(value.data)
             setTotalPages(value.totalPages)
         })
-        getUsers(page, 1).then(value => {
+        getUsers(page, 5).then(value => {
             setUser(value.data)
         })
     }, [page]);
@@ -57,12 +57,6 @@ export default function Users() {
     const paginationHandler = (num) => {
         setPage(page + num)
     };
-
-    if (!filteredUsers) {
-        return (
-            <div>Loading...</div>
-        )
-    }
 
     return (
         <div>

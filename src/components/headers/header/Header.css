@@ -27,6 +27,9 @@
     grid-column-gap: 16px;
 }
 
+.header_top a {
+    text-decoration: none;
+}
 .avatar {
     display: flex;
     align-items: flex-end;
@@ -49,4 +52,5 @@
     background-color: #A6192E;
     font-weight: bold;
     border-color: #A6192E;
+    text-decoration: none;
 }

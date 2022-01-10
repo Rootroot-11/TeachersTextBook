@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+.header_second a {
+    text-decoration: none;
+}
+
 .menu_item {
     color: #C0C0C0;
 }
