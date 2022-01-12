@@ -41,11 +41,11 @@ export default function Users() {
     });
 
     useEffect(() => {
-        getUsers(page, 2).then(value => {
+        getUsers(page, 4).then(value => {
             setUsers(value.data)
             setTotalPages(value.totalPages)
         })
-        getUsers(page, 5).then(value => {
+        getUsers(page, 1).then(value => {
             setUser(value.data)
         })
     }, [page]);

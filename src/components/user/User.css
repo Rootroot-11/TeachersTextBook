@@ -65,3 +65,7 @@ th, td { display: block; }
     display: flex;
 }
 
+table tr:hover {
+    color: blue;
+    cursor: pointer;
+}

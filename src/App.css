@@ -1,5 +1,6 @@
 .fullContainer {
     width: 1440px;
+    overflow: hidden;
 }
 
 .wrap {

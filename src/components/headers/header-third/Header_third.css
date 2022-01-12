@@ -19,3 +19,18 @@
     background-color: #F2F2F2;
     margin: 0;
 }
+.searchForm {
+    display: flex;
+}
+
+.searchForm svg {
+    display: flex;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 10px;
+}
+
+.searchForm i {
+    color: #C0C0C0;
+}
